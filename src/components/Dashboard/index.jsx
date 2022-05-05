@@ -2,6 +2,7 @@ import React from "react";
 import Climate from "../Climate";
 import Blinds from "../Blinds";
 import Energy from "../Energy";
+import Lights from "../Lights";
 import "./style.css";
 
 const Dashboard = ({ data }) => {
@@ -16,6 +17,7 @@ const Dashboard = ({ data }) => {
         water={data.energyConsumption.water}
         electricity={data.energyConsumption.electricity}
       />
+       <Lights lights={data.lights} />
     
     </main>
   );
